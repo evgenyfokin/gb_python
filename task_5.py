@@ -7,3 +7,4 @@ if result < 0:
     print(f'Unprofitable ({result});')
 else:
     print(f'Profitable ({result}); Benefit: {result / income * 100}%')
+    
