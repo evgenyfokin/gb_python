@@ -1,6 +1,14 @@
 # task_1
-first_var = 404
-second_var = "Merhaba"
-third_var = int(input("Enter your number: "))
-forth_var = input("Enter your name: ")
-print(first_var, second_var, third_var, forth_var)
+
+def divide(num, divider):
+    if divider == 0:
+        return print("U can't divide by zero!")
+    else:
+        if num % divider > 0:
+            return num / divider
+        else:
+            return num // divider
+
+
+print(divide(int(input('Enter a divisible numb: ')),
+             int(input('Enter a divider: '))))

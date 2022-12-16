@@ -1,9 +1,17 @@
 # task_4
 
-user_num = int(input("Enter your number: "))
-biggest_num = user_num % 10
-while user_num > 9:
-    user_num //= 10
-    if user_num % 10 > biggest_num:
-        biggest_num = user_num % 10
-print(f'The biggest number: {biggest_num}')
+def my_func(x, y):
+    if x <= 0:
+        return '"x" must greater than 0'
+    if y >= 0:
+        return '"y" must less than 0'
+    i = 1
+    result = x
+    while i < y * -1:
+        result *= x
+        i += 1
+    return 1/result
+
+
+print(my_func(int(input('Number to be powered: ')),
+              int(input('Degree: '))))
