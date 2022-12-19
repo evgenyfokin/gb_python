@@ -1,10 +1,7 @@
 # task_2
 
-def show_user_data(email, surname, birthday, current_city, name, phone):
-    return (f'name: {name}; surname: {surname}; birthday: {birthday};'
-            f' current city: {current_city}, email: {email}, phone: {phone}')
+my_list = [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55, 16]
+new_list = [el for el in my_list if el - my_list[my_list.index(el) - 1] > 0
+            and my_list.index(el) > 0]
 
-
-print(show_user_data(surname='Smith', phone='+0(101)0111010', name='Jeffrey',
-                     email="jeffrey.smith@gb.com", current_city='Istanbul',
-                     birthday='04.24.1996'))
+print(new_list)

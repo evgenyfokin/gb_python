@@ -1,17 +1,6 @@
 # task_4
 
-def my_func(x, y):
-    if x <= 0:
-        return '"x" must greater than 0'
-    if y >= 0:
-        return '"y" must less than 0'
-    i = 1
-    result = x
-    while i < y * -1:
-        result *= x
-        i += 1
-    return 1/result
+my_list = [2, 2, 2, 7, 23, 1, 44, 44, 3, 2, 10, 7, 4, 11]
 
-
-print(my_func(int(input('Number to be powered: ')),
-              int(input('Degree: '))))
+new_list = [i for i in my_list if my_list.count(i) == 1]
+print(new_list)

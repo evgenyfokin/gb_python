@@ -1,18 +1,7 @@
 # task_5
 
-def sum_user_nums(calc=0):
-    print('Enter nums or finish the process 'f'by entering "="')
-    total = calc
+from functools import reduce
 
-    def get_sum(result):
-        nums = input('Enter: ')
-        if nums == '=':
-            return print(f'The sum is {result}')
-        for i in nums.split(' '):
-            result += int(i)
-        print(f'The sum is {result}')
-        sum_user_nums(result)
-    get_sum(total)
-
-
-sum_user_nums()
+my_list = [i for i in range(100, 1001) if i % 2 == 0]
+total = reduce(lambda x, y: x * y, my_list)
+print(total)
