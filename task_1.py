@@ -1,5 +1,7 @@
-# task_1) terminal command -> python3 task_1.py 8 500 600
-from sys import argv
+# task_1
 
-script_name, working_hours, hourly_charge, bonus = argv
-print(f'Salary: {int(working_hours) * int(hourly_charge) + int(bonus)}')
+with open("task_1_addition.txt", 'w', encoding='utf-8') as file:
+    user_input = 'plug'
+    while user_input != '':
+        user_input = input('Enter something: ')
+        file.write(f'{user_input}\n')

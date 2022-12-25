@@ -1,7 +1,9 @@
 # task_2
 
-my_list = [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55, 16]
-new_list = [el for el in my_list if el - my_list[my_list.index(el) - 1] > 0
-            and my_list.index(el) > 0]
-
-print(new_list)
+with open('task_2_addition.txt', encoding='utf-8') as file:
+    received_data = file.readlines()
+    print(f'The amount of lines: {len(received_data)}.')
+    for i in received_data:
+        line_list = i.split(' ')
+        print(f"{received_data.index(i) + 1} line contains "
+              f"{len(line_list)} words.")
