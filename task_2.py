@@ -1,7 +1,7 @@
 # task_2
 
-user_time = int(input("Enter number of seconds: "))
-hours = user_time // 3600
-minutes = user_time // 60
-seconds = user_time % 60
-print(f"{hours}:{minutes}:{seconds}")
+my_list = [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55, 16]
+new_list = [el for el in my_list if el - my_list[my_list.index(el) - 1] > 0
+            and my_list.index(el) > 0]
+
+print(new_list)

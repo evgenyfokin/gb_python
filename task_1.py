@@ -1,6 +1,5 @@
-# task_1
-first_var = 404
-second_var = "Merhaba"
-third_var = int(input("Enter your number: "))
-forth_var = input("Enter your name: ")
-print(first_var, second_var, third_var, forth_var)
+# task_1) terminal command -> python3 task_1.py 8 500 600
+from sys import argv
+
+script_name, working_hours, hourly_charge, bonus = argv
+print(f'Salary: {int(working_hours) * int(hourly_charge) + int(bonus)}')

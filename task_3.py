@@ -1,5 +1,3 @@
 # task_3
 
-user_num = input("Enter yor number: ")
-print(int(user_num) + int(user_num +
-                          user_num) + int(user_num + user_num + user_num))
+my_gen = [print(i) for i in range(20, 240) if i % 20 == 0 or i % 21 == 0]

@@ -1,9 +1,6 @@
 # task_4
 
-user_num = int(input("Enter your number: "))
-biggest_num = user_num % 10
-while user_num > 9:
-    user_num //= 10
-    if user_num % 10 > biggest_num:
-        biggest_num = user_num % 10
-print(f'The biggest number: {biggest_num}')
+my_list = [2, 2, 2, 7, 23, 1, 44, 44, 3, 2, 10, 7, 4, 11]
+
+new_list = [i for i in my_list if my_list.count(i) == 1]
+print(new_list)
