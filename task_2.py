@@ -1,7 +1,9 @@
 # task_2
 
-user_time = int(input("Enter number of seconds: "))
-hours = user_time // 3600
-minutes = user_time // 60
-seconds = user_time % 60
-print(f"{hours}:{minutes}:{seconds}")
+with open('task_2_addition.txt', encoding='utf-8') as file:
+    received_data = file.readlines()
+    print(f'The amount of lines: {len(received_data)}.')
+    for i in received_data:
+        line_list = i.split(' ')
+        print(f"{received_data.index(i) + 1} line contains "
+              f"{len(line_list)} words.")

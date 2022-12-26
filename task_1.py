@@ -1,6 +1,7 @@
 # task_1
-first_var = 404
-second_var = "Merhaba"
-third_var = int(input("Enter your number: "))
-forth_var = input("Enter your name: ")
-print(first_var, second_var, third_var, forth_var)
+
+with open("task_1_addition.txt", 'w', encoding='utf-8') as file:
+    user_input = 'plug'
+    while user_input != '':
+        user_input = input('Enter something: ')
+        file.write(f'{user_input}\n')
