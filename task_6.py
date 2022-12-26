@@ -1,9 +1,12 @@
 # task_6
 
-result = int(input("First day result: "))
-goal = int(input("Your goal: "))
-day = 1
-while result < goal:
-    result += result * 0.10
-    day += 1
-print(f"You'll reach it in {day} days")
+def int_func(user_input):
+    return print(user_input.title())
+
+
+def capitalize_words():
+    user_input = input('Enter: ')
+    int_func(user_input)
+
+
+capitalize_words()
